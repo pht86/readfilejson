@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ThiDK",
+    "city": "Hanoi",
+    "state":"HN"
+  },
+  {
+    "name": "Nguyen Minh Phuong",
+    "city": "Hanoi",
+    "state":"HN"
+  },
+  {
+    "name": "Chau Anh",
+    "city": "Los Angeles",
+    "state":"LA"
+  },
+  {
+    "name": "Nhat Minh",
+    "city": "New York",
+    "state":"NY"
+  },
+  {
+    "name": "Elsa",
+    "city": "Toranto",
+    "state":"CA"
+  }
+]

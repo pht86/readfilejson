@@ -1,0 +1,28 @@
+var myApp = angular.module('myApp', []);
+myApp.controller('jsonCtrl', function ($scope, $http){
+    $http.get('employees.json').success(function (data){
+        $scope.employees = data;
+    });
+    $scope.addEmp = function(){
+        $scope.employees.push({name: $scope.empName, city: $scope.empName, state: $scope.empState});
+    }
+    $scope.getTotalEmployees = function (){
+        return $scope.employees.length;
+    }
+    $scope.reversedMessage = function (){
+        return $scope.empName.split("").reverse().join("");
+    }
+});
+function testCtrl($scope){
+    $scope.names = [
+        {name: "ThiDK"},
+        {name: "Codelearn"},
+        {name: "Dang Kim Thi"}
+    ];
+    $scope.addName = function(){
+        $scope.name.push({name: $scope.myName});
+    }
+    $scope.reversedMessage = function (){
+        return $scope.myName.split("").reverse().join("");
+    }
+}
